@@ -1,2 +1,2 @@
-# godot-mono-ci
-Docker image for building and exporting Godot projects
+# godot-mono-export
+GitHub Action for doing an export on a Godot project, with Mono (C#) support.
