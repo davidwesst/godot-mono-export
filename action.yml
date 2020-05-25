@@ -1,0 +1,25 @@
+name: 'Godot (Mono) Export'
+description: 'Export Godot projects that are written in either C# or GDScript'
+
+inputs:
+    project-path:
+        description: 'The path to the root of the Godot project to be exported'
+        required: true
+        default: './'
+    export-config:
+        description: 'The name of the export configuration in the project to use in the export command'
+        required: true
+        default: 'Windows'
+    export-path:
+        description: 'The export location for the project. Should include path and executable file name (e.g. ./build/windows/mygame.exe)'
+        required: true
+        default: './build/windows/game.exe'
+
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.project-path }}
+        - ${{ inputs.export-config }}
+        - ${{ inputs.export-path }}
+        
