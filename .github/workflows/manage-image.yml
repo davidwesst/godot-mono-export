@@ -20,4 +20,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: davidwesst/godot-mono-export
           tag_with_ref: true
-          push: false
+          push: true
