@@ -17,7 +17,7 @@ inputs:
 
 runs:
     using: 'docker'
-    image: './'
+    image: 'Dockerfile'
     args:
         - ${{ inputs.project-path }}
         - ${{ inputs.export-config }}
