@@ -24,7 +24,7 @@ jobs:
         with:
           project-path: ./samples/csharp-sample/
           export-config: Windows
-          export-path:  ./build/windows/sample.exe
+          export-path:  build/windows/sample.exe
       - name: List Directory Contents
         run: |
           pwd
