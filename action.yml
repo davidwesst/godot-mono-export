@@ -17,7 +17,7 @@ inputs:
 
 runs:
     using: 'docker'
-    image: 'davidwesst/godot-mono-export:latest'
+    image: 'davidwesst/godot-mono-export:3.2.1'
     args:
         - ${{ inputs.project-path }}
         - ${{ inputs.export-config }}
