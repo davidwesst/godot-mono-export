@@ -13,11 +13,11 @@ inputs:
     export-path:
         description: 'The export location for the project. Should include path and executable file name (e.g. ./build/windows/mygame.exe)'
         required: true
-        default: './build/windows/game.exe'
+        default: 'build/windows/game.exe'
 
 runs:
     using: 'docker'
-    image: 'Dockerfile'
+    image: 'davidwesst/godot-mono-export:latest'
     args:
         - ${{ inputs.project-path }}
         - ${{ inputs.export-config }}
