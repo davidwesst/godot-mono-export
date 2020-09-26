@@ -1,4 +1,4 @@
-FROM davidwesst/godot-mono:3.2.2
+FROM davidwesst/godot-mono:3.2.3
 
 # setup entrypoint script
 COPY ./entrypoint.sh /entrypoint.sh
